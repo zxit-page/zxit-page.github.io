@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>众信网络科技 | 专注于软件开发的科技团队</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+  html { scroll-behavior: smooth; }
+  .nav-scrolled {
+    background: rgba(255,255,255,0.96) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  }
+  .nav-scrolled .nav-link { color: #1e293b !important; }
+  .nav-scrolled .logo-text { color: #0f172a !important; }
+  .hero-bg {
+    background: linear-gradient(135deg, #0c1e3d 0%, #1e3a8a 50%, #1e40af 100%);
+  }
+  .card-hover {
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(15, 23, 42, 0.12);
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .stat-number { font-variant-numeric: tabular-nums; }
+  .icon-box {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<!-- 导航栏 -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <div class="flex items-center">
+        <div class="logo-text text-white text-xl font-bold tracking-wide transition-colors duration-300">
+          众信网络科技
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-10">
+        <a href="#home" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">首页</a>
+        <a href="#about" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">关于我们</a>
+        <a href="#service" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">核心服务</a>
+        <a href="#contact" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">联系我们</a>
+        <a href="#contact" class="bg-white text-blue-700 px-5 py-2 rounded-md text-sm font-medium hover:bg-slate-100 transition-colors">
+          咨询合作
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- 首屏 -->
+<section id="home" class="hero-bg relative overflow-hidden pt-32 pb-28 lg:pt-40 lg:pb-36">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-3xl fade-in">
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        用技术驱动<br>企业数字化升级
+      </h1>
+      <p class="text-blue-100 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
+        专注为企业提供全链路数字化解决方案，涵盖软件开发、云服务、大数据与人工智能应用，助力客户实现业务增长与效率提升。
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#service" class="bg-white text-blue-700 px-8 py-3.5 rounded-md font-medium hover:bg-slate-100 transition-colors">
+          了解服务
+        </a>
+        <a href="#contact" class="border border-white/30 text-white px-8 py-3.5 rounded-md font-medium hover:bg-white/10 transition-colors">
+          免费咨询
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 关于我们 -->
+<section id="about" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="fade-in">
+        <div class="text-blue-600 text-sm font-semibold tracking-widest mb-3">ABOUT US</div>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">深耕技术领域，赋能商业价值</h2>
+        <p class="text-slate-600 leading-relaxed mb-5">
+          众信网络科技成立于2017年，是一个专注于起始页开发的团队。是一支经验丰富的技术团队。
+        </p>
+        <p class="text-slate-600 leading-relaxed mb-8">
+          我们坚持以客户需求为核心，以技术创新为驱动，提供从需求分析、方案设计、开发实施到运维保障的一站式服务。
+        </p>
+        <div class="grid grid-cols-3 gap-6">
+          <div>
+            <div class="text-3xl font-bold text-blue-600 stat-number">9余</div>
+            <div class="text-slate-500 text-sm mt-1">年行业经验</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-blue-600 stat-number">500+</div>
+            <div class="text-slate-500 text-sm mt-1">服务客户</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-blue-600 stat-number">95%</div>
+            <div class="text-slate-500 text-sm mt-1">客户满意度</div>
+          </div>
+        </div>
+      </div>
+     </section>
+<!-- 核心服务 -->
+<section id="service" class="py-20 lg:py-28 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16 fade-in">
+      <div class="text-blue-600 text-sm font-semibold tracking-widest mb-3">OUR SERVICES</div>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">核心服务</h2>
+      <p class="text-slate-500 max-w-2xl mx-auto">全维度技术支持能力以及超长的技术支持周期</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-8 rounded-xl card-hover fade-in">
+        <div class="icon-box w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 mb-3">定制软件开发</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          面向业务场景，提供起始页定制化开发服务。
+        </p>
+      </div>
+      <div class="bg-white p-8 rounded-xl card-hover fade-in">
+        <div class="icon-box w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 mb-3">云计算服务</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          提供架构设计、部署迁移、运维托管等服务，保障系统稳定高效运行。
+        </p>
+      </div>
+      <div class="bg-white p-8 rounded-xl card-hover fade-in">
+        <div class="icon-box w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 mb-3">大数据分析</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          数据采集、治理、可视化与智能分析，助力企业实现数据驱动决策。
+        </p>
+      </div>
+      <div class="bg-white p-8 rounded-xl card-hover fade-in">
+        <div class="icon-box w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 mb-3">AI智能应用</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          结合大模型与行业场景，打造智能客服、智能审批等AI落地应用。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+     <!-- 联系我们 -->
+<section id="contact" class="py-20 lg:py-28 bg-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <div class="fade-in">
+        <div class="text-blue-400 text-sm font-semibold tracking-widest mb-3">CONTACT US</div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">开启您的数字化之旅</h2>
+        <p class="text-slate-300 leading-relaxed mb-10">
+          无论您处于数字化的哪个阶段，我们都能提供专业的方案与服务。填写表单或直接联系我们，获取专属解决方案。
+        </p>
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-medium mb-1">公司地址</div>
+              <div class="text-slate-400 text-sm">青岛市城阳区黑龙江中路216号</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-medium mb-1">商务邮箱</div>
+              <div class="text-slate-400 text-sm">zxit_noreply@163.com</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-medium mb-1">联系电话</div>
+              <div class="text-slate-400 text-sm">15563077089</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 页脚 -->
+<footer class="bg-slate-950 text-slate-400 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-white font-bold text-lg">众信网络科技</div>
+      <div class="text-sm">
+        © 2017-2026 众信网络科技有限公司 版权所有
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  // 导航滚动效果
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('nav-scrolled');
+    } else {
+      navbar.classList.remove('nav-scrolled');
+    }
+  });
+  // 滚动淡入动画
+  const fadeElements = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  fadeElements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
