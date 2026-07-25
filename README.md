@@ -1,2 +1,1 @@
-# zxit-page.github.io
-zxit.neox.lol
+# zxit.neox.lol
